@@ -11,11 +11,7 @@ const SidebarDefault = () => {
       </Link>
 
       {tags.map(tag => (
-        <Link
-          key={tag}
-          href={`/notes/filter/${tag.toLowerCase()}`}
-          className={css.navItem}
-        >
+        <Link key={tag} href={`/notes/filter/${tag}`} className={css.navItem}>
           {tag}
         </Link>
       ))}
